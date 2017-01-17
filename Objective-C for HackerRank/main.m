@@ -7,11 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Strings.h"
+#import "Arrays.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        
+        Strings *solution = [Strings new];
+        
+        [solution superReducedString];
     }
     return 0;
 }
+

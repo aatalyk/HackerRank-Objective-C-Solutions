@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		84CB26F81E2EA51A00F480FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CB26F71E2EA51A00F480FE /* main.m */; };
+		84CB27021E2EA58F00F480FE /* Arrays.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CB27011E2EA58F00F480FE /* Arrays.m */; };
+		84CB27051E2EB12A00F480FE /* Strings.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CB27041E2EB12A00F480FE /* Strings.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		84CB26F41E2EA51A00F480FE /* Objective-C for HackerRank */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Objective-C for HackerRank"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CB26F71E2EA51A00F480FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84CB27001E2EA58F00F480FE /* Arrays.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Arrays.h; sourceTree = "<group>"; };
+		84CB27011E2EA58F00F480FE /* Arrays.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Arrays.m; sourceTree = "<group>"; };
+		84CB27031E2EB12A00F480FE /* Strings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Strings.h; sourceTree = "<group>"; };
+		84CB27041E2EB12A00F480FE /* Strings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Strings.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				84CB26F71E2EA51A00F480FE /* main.m */,
+				84CB27001E2EA58F00F480FE /* Arrays.h */,
+				84CB27011E2EA58F00F480FE /* Arrays.m */,
+				84CB27031E2EB12A00F480FE /* Strings.h */,
+				84CB27041E2EB12A00F480FE /* Strings.m */,
 			);
 			path = "Objective-C for HackerRank";
 			sourceTree = "<group>";
@@ -119,7 +129,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84CB27021E2EA58F00F480FE /* Arrays.m in Sources */,
 				84CB26F81E2EA51A00F480FE /* main.m in Sources */,
+				84CB27051E2EB12A00F480FE /* Strings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
