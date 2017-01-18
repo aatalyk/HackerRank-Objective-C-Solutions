@@ -15,7 +15,7 @@ int main(int argc, const char * argv[]) {
         
         Strings *solution = [Strings new];
         
-        [solution superReducedString];
+        [solution pangramm];
     }
     return 0;
 }

@@ -12,4 +12,8 @@
 
 -(void)superReducedString;
 
+-(void)camelCase;
+
+-(void)pangramm;
+
 @end
