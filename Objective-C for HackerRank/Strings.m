@@ -10,23 +10,33 @@
 
 @implementation Strings
 
+#pragma Super Reduced String
 -(void)superReducedString {
     
     char str[110];
     
     scanf("%s", str);
     
-    int i = 0;
+    NSMutableArray *stack = [NSMutableArray new];
     
-    while(i<strlen(str)-1) {
-        
-        if(str[i] == str[i+1]) {
-            i++;
+    for(int i = 0; i<strlen(str); i++) {
+        if ([stack count]==0) {
+            [stack addObject:[NSString stringWithFormat:@"%c", str[i]]];
         } else {
-            printf("%c", str[i]);
+            if ([[stack lastObject] isEqualToString:[NSString stringWithFormat:@"%c", str[i]]]) {
+                [stack removeLastObject];
+            } else {
+                [stack addObject:[NSString stringWithFormat:@"%c", str[i]]];
+            }
         }
-        
-        i++;
+    }
+    
+    if ([stack count] == 0) {
+        printf("Empty String");
+    } else {
+        for (int i = 0; i<[stack count]; i++) {
+            printf("%s", [stack[i] UTF8String]);
+        }
     }
 }
 
