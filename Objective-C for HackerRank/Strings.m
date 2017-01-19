@@ -174,4 +174,92 @@
     }
 }
 
+#pragma Gem Stones
+-(void)gemStones {
+    
+    char *str = malloc(110*sizeof(int));
+    
+    int n;
+    int arr[30];
+    
+    for(int i = 0; i<26; i++) {
+        arr[i] = 0;
+    }
+    
+    scanf("%i", &n);
+    
+    for(int i = 0; i<n; i++) {
+        scanf("%s", str);
+        NSMutableString *lowercase = [NSMutableString stringWithString:@"abcdefghijklmnopqrstuvwxyz"];
+        NSMutableString *string = [NSMutableString stringWithFormat:@"%s", str];
+        for(NSInteger j = 0; j<string.length; j++) {
+            for(NSInteger k = 0; k<lowercase.length; k++) {
+                if ([string characterAtIndex:j] == [lowercase characterAtIndex:k]) {
+                    arr[k]++;
+                    [lowercase replaceCharactersInRange:NSMakeRange(k, 1) withString:@"*"];
+                }
+            }
+        }
+    }
+    
+    int count = 0;
+    
+    for(int i = 0; i<26; i++) {
+        if(arr[i] == n) {
+            count++;
+        }
+    }
+    
+    printf("%i", count);
+}
+
+#pragma Alternating Characters
+-(void)alternatingCharacters {
+    
+    char *str = malloc(100010*sizeof(int));
+    
+    int t;
+    
+    scanf("%i", &t);
+    
+    for(int i = 0; i<t; i++) {
+        scanf("%s", str);
+        NSMutableString *string = [NSMutableString stringWithFormat:@"%s", str];
+        int count = 0;
+        for(int i = 0; i<string.length-1; i++) {
+            if ([string characterAtIndex:i] == [string characterAtIndex:i+1]) {
+                count++;
+            }
+        }
+        printf("%i\n", count);
+    }
+}
+
+#pragma Beautiful Binary String
+-(void)beatifulBinaryString {
+    
+    char *str = malloc(110*sizeof(int));
+    
+    int n;
+    
+    scanf("%i %s", &n, str);
+    
+    NSString *string = [NSString stringWithFormat:@"%s", str];
+    
+    int i = 0, count = 0;
+    
+    while(i<n-2) {
+        
+       if([string characterAtIndex:i] == '0' &&
+          [string characterAtIndex:i+1] == '1' &&
+          [string characterAtIndex:i+2] == '0') {
+           count++;
+           i = i+2;
+       }
+       i++;
+    }
+    
+    printf("%i", count);
+}
+
 @end

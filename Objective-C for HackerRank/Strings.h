@@ -16,5 +16,8 @@
 -(void)caesarCipher;
 -(void)marsExploration;
 -(void)funnyString;
+-(void)gemStones;
+-(void)alternatingCharacters;
+-(void)beatifulBinaryString;
 
 @end
