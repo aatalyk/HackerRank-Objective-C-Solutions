@@ -15,7 +15,7 @@ int main(int argc, const char * argv[]) {
         
         Strings *solution = [Strings new];
         
-        [solution pangramm];
+        [solution funnyString];
     }
     return 0;
 }

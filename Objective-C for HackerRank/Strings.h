@@ -11,9 +11,10 @@
 @interface Strings : NSObject
 
 -(void)superReducedString;
-
 -(void)camelCase;
-
 -(void)pangramm;
+-(void)caesarCipher;
+-(void)marsExploration;
+-(void)funnyString;
 
 @end

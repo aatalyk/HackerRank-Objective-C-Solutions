@@ -90,4 +90,88 @@
     }
 }
 
+#pragma Caesar Cipher
+-(void)caesarCipher {
+    
+    char *str = malloc(110*sizeof(int));
+    
+    int n, k;
+    
+    scanf("%i %s %i", &n, str, &k);
+    
+    NSString *string = [NSString stringWithFormat:@"%s", str];
+    
+    for(NSInteger i = 0; i<string.length; i++) {
+        int asciiCode = [string characterAtIndex:i];
+        if(asciiCode>64 && asciiCode<91) {
+            asciiCode = asciiCode + k;
+            while (asciiCode>90) {
+                asciiCode = asciiCode%90 + 64;
+            }
+        }
+        if(asciiCode>96 && asciiCode<123) {
+            asciiCode = asciiCode + k;
+            while (asciiCode>122) {
+                asciiCode = asciiCode%122+96;
+            }
+        }
+        NSString *new_string = [NSString stringWithFormat:@"%c", asciiCode];
+        printf("%s", [new_string UTF8String]);
+    }
+}
+
+#pragma Mars Exploration
+-(void)marsExploration {
+    
+    char *str = malloc(110*sizeof(int));
+    
+    scanf("%s", str);
+    
+    NSString *message = [NSString stringWithFormat:@"%s", str];
+    
+    int count = 0;
+    
+    for(NSInteger i = 0; i<message.length-2; i=i+3) {
+        if([message characterAtIndex:i] != 'S') {
+            count++;
+        }
+        if([message characterAtIndex:i+1] != 'O') {
+            count++;
+        }
+        if([message characterAtIndex:i+2] != 'S') {
+            count++;
+        }
+    }
+    
+    printf("%i", count);
+}
+
+#pragma Funny String
+-(void)funnyString {
+    
+    char *str = malloc(10010*sizeof(int));
+    
+    BOOL isFunny = true;
+    
+    int t;
+    
+    scanf("%i", &t);
+    
+    for(int i = 0; i<t; i++) {
+        scanf("%s", str);
+        NSString *string = [NSString stringWithFormat:@"%s", str];
+        isFunny = true;
+        for(NSInteger i = string.length-1; i>0; i--) {
+            int left_side = abs([string characterAtIndex:i]-[string characterAtIndex:i-1]);
+            int right_side = abs([string characterAtIndex:string.length-1-i]-[string characterAtIndex:string.length-i]);
+            if (left_side!=right_side) {
+                isFunny = false;
+            }
+        }
+        printf("\n");
+        if (isFunny) printf("Funny");
+        else printf("Not Funny");
+    }
+}
+
 @end
