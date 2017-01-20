@@ -9,13 +9,14 @@
 #import <Foundation/Foundation.h>
 #import "Strings.h"
 #import "Arrays.h"
+#import "Warmup.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        Strings *solution = [Strings new];
+        Warmup *solution = [Warmup new];
         
-        [solution beatifulBinaryString];
+        [solution stairCase];
     }
     return 0;
 }

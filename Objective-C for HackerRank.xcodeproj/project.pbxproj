@@ -10,6 +10,7 @@
 		84CB26F81E2EA51A00F480FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CB26F71E2EA51A00F480FE /* main.m */; };
 		84CB27021E2EA58F00F480FE /* Arrays.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CB27011E2EA58F00F480FE /* Arrays.m */; };
 		84CB27051E2EB12A00F480FE /* Strings.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CB27041E2EB12A00F480FE /* Strings.m */; };
+		84D441DA1E313A15000E9502 /* Warmup.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D441D91E313A15000E9502 /* Warmup.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		84CB27011E2EA58F00F480FE /* Arrays.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Arrays.m; sourceTree = "<group>"; };
 		84CB27031E2EB12A00F480FE /* Strings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Strings.h; sourceTree = "<group>"; };
 		84CB27041E2EB12A00F480FE /* Strings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Strings.m; sourceTree = "<group>"; };
+		84D441D81E313A15000E9502 /* Warmup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Warmup.h; sourceTree = "<group>"; };
+		84D441D91E313A15000E9502 /* Warmup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Warmup.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 				84CB27011E2EA58F00F480FE /* Arrays.m */,
 				84CB27031E2EB12A00F480FE /* Strings.h */,
 				84CB27041E2EB12A00F480FE /* Strings.m */,
+				84D441D81E313A15000E9502 /* Warmup.h */,
+				84D441D91E313A15000E9502 /* Warmup.m */,
 			);
 			path = "Objective-C for HackerRank";
 			sourceTree = "<group>";
@@ -132,6 +137,7 @@
 				84CB27021E2EA58F00F480FE /* Arrays.m in Sources */,
 				84CB26F81E2EA51A00F480FE /* main.m in Sources */,
 				84CB27051E2EB12A00F480FE /* Strings.m in Sources */,
+				84D441DA1E313A15000E9502 /* Warmup.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +264,7 @@
 				84CB26FD1E2EA51A00F480FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
