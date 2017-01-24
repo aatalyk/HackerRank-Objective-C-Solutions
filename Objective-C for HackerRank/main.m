@@ -16,7 +16,7 @@ int main(int argc, const char * argv[]) {
         
         Warmup *solution = [Warmup new];
         
-        [solution stairCase];
+        [solution circularArrayRotation];
     }
     return 0;
 }

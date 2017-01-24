@@ -124,4 +124,59 @@
     }
 }
 
+#pragma Time Conversion
+-(void)timeConversion {
+    
+    char *str = malloc(10*sizeof(int));
+    
+    scanf("%s", str);
+    
+    int first = str[0] - '0';
+    int second = str[1] - '0';
+    
+    if((first == 1) && (second == 2)) {
+        if(str[8] == 'P' ) {
+            printf("12");
+        } else {
+            printf("00");
+        }
+        for(int i = 2; i<8; i++) {
+            printf("%c", str[i]);
+        }
+    } else {
+        if(str[8] == 'P' ) {
+            int time = first*10 + second + 12;
+            printf("%i", time);
+            for(int i = 2; i<8; i++) {
+                printf("%c", str[i]);
+            }
+        } else {
+            for(int i = 0; i<8; i++) {
+                printf("%c", str[i]);
+            }
+        }
+    }
+}
+
+#pragma mark - Circular Array Rotation
+-(void)circularArrayRotation {
+    
+    long long int n;
+    long long int k;
+    long long int q;
+    scanf("%lli %lli %lli",&n,&k,&q);
+    long long int a[n];
+    for(int a_i = 0; a_i < n; a_i++){
+        scanf("%lli",&a[a_i]);
+    }
+    k = k%n;
+    for(int a0 = 0; a0 < q; a0++){
+        long long int m;
+        scanf("%lli",&m);
+        long long int index = n - k + m;
+        if (index>=n) index = index%n;
+        printf("%lli\n", a[index]);
+    }
+}
+
 @end

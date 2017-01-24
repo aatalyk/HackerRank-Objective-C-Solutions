@@ -15,5 +15,7 @@
 -(void)diagonalDifference;
 -(void)plusMinus;
 -(void)stairCase;
+-(void)timeConversion;
+-(void)circularArrayRotation;
 
 @end
